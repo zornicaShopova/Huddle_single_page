@@ -1,19 +1,30 @@
     /* default */
-    
+
     body {
         background-image: url('../images/bg-desktop.svg');
         background-repeat: no-repeat;
-        background-size: 1903px 974px;
+        background-size:cover;
+        /* background-size: 1903px 974px; */
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         background-color: hsl(257, 40%, 49%);
         color: white;
+        padding:2em;
+    }
+
+    .container--narrow{
+        padding:2em;
+        display:flex;
+        flex-direction: column;
+        gap:9em;
     }
     
     h1 {
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
+        font-size:35px;
     }
+
   /* items  in the grid   */
     .header{
         grid-column:  1/1;
@@ -25,14 +36,6 @@
     .section2{
         grid-column: 2/2;
         padding-top: 30px;
-        
-    }
-    .footer{
-        grid-column: 3/2;
-        display: flex;
-        justify-content:flex-end;
-        padding-top: 15%;
-        
     }
 
     .grid-container {
@@ -49,10 +52,50 @@
     .section2 h1 {
         font-weight: 400;
     }
+
+    .icon{
+        margin-top:auto;
+        display:flex;
+        gap:1em;
+        margin-left:auto;
+        align-items:flex-end;
+        cursor:pointer;
+    }
+    .facebook{
+        background: url("../icons/icons8-facebook-64.png") no-repeat;
+        height:65px;
+        width:65px;
+        background-size:cover;
+        display:block;
+        
+    }
+    .facebook:hover{
+        background-repeat:no-repeat;
+        background-image: url("../icons/icons8-facebook-pink.png");
+    }
+    .twitter{
+        height:65px;
+        width:65px;
+        background-repeat:no-repeat;
+        background-image: url("../icons/icons8-twitter-circled-64.png");
+    }
+    .twitter:hover{
+        background-image: url("../icons/icons8-twitter-pink.png");
+    }
+    .instagram{
+        height:65px;
+        width:65px;
+        background-repeat:no-repeat;
+        background-image: url("../icons/icons8-instagram-64.png");
+    }
+    .instagram:hover{
+        background-image: url("../icons/icons8-instagram-pink.png");
+    }
     
     /* text paragraph */
     p {
       text-align: left;
+      font-size:16px;
     }
     /* button  */
     button {
@@ -75,51 +118,6 @@
         
     }
     
-    
-   /* all white icons  */
-    .icons {
-        height: 40px;  
-    }
-
-   /* facebook hover icon  */
-    .icon_container {
-        display: flex;
-        position: relative;
-        bottom: 47px;
-     
-        transition: .3s linear;
-        cursor: pointer;
-    }
-    .icon_container img{
-        height: 40px;
-        padding:1.5px ;
-    }
-    
-    /* opacity image pink   */
-    .icon_container .facebook{
-        opacity: 0;
-    }
-
-    .icon_container .twitter{
-        opacity: 0;
-    }
-
-    .icon_container .instagram{
-        opacity: 0;
-    }
-
-    /* hover  */
-    .icon_container:hover .facebook{
-        opacity: 1;
-    }
-
-    .icon_container:hover .twitter{
-        opacity: 1;
-    }
-
-    .icon_container:hover .instagram{
-        opacity: 1;
-    }
 
 /* RESPONSIVE design for mobile  */
 
@@ -174,39 +172,10 @@
        margin-left: 25%;
     }
 
-    .footer{
-        grid-column: 3/1;
-        display: flex;
+    .icon{
+        margin:0;
         justify-content:center;
-        padding-top: 20%;
-        
+        aling-items:center;
     }
-
-    footer  img{
-      padding: 5px;
-    }
-
-
-    .icon_container {
-        display: flex;
-        position: relative;
-        bottom: 53px;
-        left: 11px;
-     
-        transition: .3s linear;
-        cursor: pointer;
-    }
-    .icon_container img{
-        height: 40px;
-        padding:1.5px ;
-    }
-
-
-
-
 
   }
-  
-
-  
-
