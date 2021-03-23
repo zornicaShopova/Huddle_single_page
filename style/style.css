@@ -1,0 +1,212 @@
+    /* default */
+    
+    body {
+        background-image: url('../images/bg-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: 1903px 974px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        background-color: hsl(257, 40%, 49%);
+        color: white;
+    }
+    
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+  /* items  in the grid   */
+    .header{
+        grid-column:  1/1;
+    }
+
+    .section1{
+        grid-column: 2/1;
+    }
+    .section2{
+        grid-column: 2/2;
+        padding-top: 30px;
+        
+    }
+    .footer{
+        grid-column: 3/2;
+        display: flex;
+        justify-content:flex-end;
+        padding-top: 15%;
+        
+    }
+
+    .grid-container {
+       display: grid;
+       grid-template-columns: auto auto ;
+       grid-gap: 50px;
+       padding-top: 5%;
+       justify-content: center;
+       
+    }
+
+   
+    /* second header font   */
+    .section2 h1 {
+        font-weight: 400;
+    }
+    
+    /* text paragraph */
+    p {
+      text-align: left;
+    }
+    /* button  */
+    button {
+        display: flex;
+        padding: 15px 55px;
+        margin-top: 25px;
+        border: none;
+        /* horizontal shadow ,  vertical shadow , blur ,  color  */
+        box-shadow: 2px 2px 15px #404142;
+        cursor: pointer;
+        border-radius: 32px;
+        color: hsl(257, 40%, 49%);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        transition-duration: 0.4s;
+    }
+    button:hover{
+        background-color: #e882e8;
+        color: white;
+        
+    }
+    
+    
+   /* all white icons  */
+    .icons {
+        height: 40px;  
+    }
+
+   /* facebook hover icon  */
+    .icon_container {
+        display: flex;
+        position: relative;
+        bottom: 47px;
+     
+        transition: .3s linear;
+        cursor: pointer;
+    }
+    .icon_container img{
+        height: 40px;
+        padding:1.5px ;
+    }
+    
+    /* opacity image pink   */
+    .icon_container .facebook{
+        opacity: 0;
+    }
+
+    .icon_container .twitter{
+        opacity: 0;
+    }
+
+    .icon_container .instagram{
+        opacity: 0;
+    }
+
+    /* hover  */
+    .icon_container:hover .facebook{
+        opacity: 1;
+    }
+
+    .icon_container:hover .twitter{
+        opacity: 1;
+    }
+
+    .icon_container:hover .instagram{
+        opacity: 1;
+    }
+
+/* RESPONSIVE design for mobile  */
+
+@media (max-width: 375px) {
+
+    body{
+        background-image: url('../images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    .grid-container {
+        display: grid;
+        flex-direction:column;
+        grid-gap:2px;
+    }
+
+    .logo{
+    display: flex;
+    justify-content: left;
+    padding-top:10px;
+    padding-bottom: 20px;
+    }
+
+    .logo img{
+    height: 30px;
+    }
+
+    .section1  img{
+    height: 250px;
+    }
+
+    .header{
+        grid-column:  1/1;
+    }
+
+    .section1{
+        grid-column: 2/1;
+    }
+    
+    .section2{
+        grid-column: 3/1;
+        text-align: center;
+        
+    }
+
+    .section2 p{
+        text-align: center;
+    }
+
+    .section2 button{
+       margin-top: 10%;
+       margin-left: 25%;
+    }
+
+    .footer{
+        grid-column: 3/1;
+        display: flex;
+        justify-content:center;
+        padding-top: 20%;
+        
+    }
+
+    footer  img{
+      padding: 5px;
+    }
+
+
+    .icon_container {
+        display: flex;
+        position: relative;
+        bottom: 53px;
+        left: 11px;
+     
+        transition: .3s linear;
+        cursor: pointer;
+    }
+    .icon_container img{
+        height: 40px;
+        padding:1.5px ;
+    }
+
+
+
+
+
+  }
+  
+
+  
+
