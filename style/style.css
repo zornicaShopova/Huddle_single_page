@@ -75,50 +75,14 @@
         
     }
     
-    
-   /* all white icons  */
-    .icons {
-        height: 40px;  
+   /* icons  */
+    .fab {
+        font-size: 30px;
+        padding: 4px;  
     }
 
-   /* facebook hover icon  */
-    .icon_container {
-        display: flex;
-        position: relative;
-        bottom: 47px;
-     
-        transition: .3s linear;
-        cursor: pointer;
-    }
-    .icon_container img{
-        height: 40px;
-        padding:1.5px ;
-    }
-    
-    /* opacity image pink   */
-    .icon_container .facebook{
-        opacity: 0;
-    }
-
-    .icon_container .twitter{
-        opacity: 0;
-    }
-
-    .icon_container .instagram{
-        opacity: 0;
-    }
-
-    /* hover  */
-    .icon_container:hover .facebook{
-        opacity: 1;
-    }
-
-    .icon_container:hover .twitter{
-        opacity: 1;
-    }
-
-    .icon_container:hover .instagram{
-        opacity: 1;
+    .fab:hover{
+        color: #e882e8;
     }
 
 /* RESPONSIVE design for mobile  */
@@ -181,29 +145,6 @@
         padding-top: 20%;
         
     }
-
-    footer  img{
-      padding: 5px;
-    }
-
-
-    .icon_container {
-        display: flex;
-        position: relative;
-        bottom: 53px;
-        left: 11px;
-     
-        transition: .3s linear;
-        cursor: pointer;
-    }
-    .icon_container img{
-        height: 40px;
-        padding:1.5px ;
-    }
-
-
-
-
 
   }
   
