@@ -34,7 +34,7 @@
         padding-top: 15%;
         
     }
-
+    /* grid */
     .grid-container {
        display: grid;
        grid-template-columns: auto auto ;
@@ -44,16 +44,16 @@
        
     }
 
-   
     /* second header font   */
     .section2 h1 {
         font-weight: 400;
     }
-    
+
     /* text paragraph */
     p {
       text-align: left;
     }
+    
     /* button  */
     button {
         display: flex;
